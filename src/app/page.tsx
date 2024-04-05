@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Navigation } from "@/components/Navbar/Navigation";
 
 export default function Home() {
@@ -7,7 +6,7 @@ export default function Home() {
       <Navigation />
       <main className="space-y-8 my-20">
         <h1 className="p-2 text-3xl sm:text-4xl md:text-5xl leading-10 xl:text-6xl 2xl:text-7xl font-extrabold text-center bg-gradient-to-r from-white/30 via-white/70 to-white bg-clip-text text-transparent">
-          Write, Publish, Earn in the Web3 Universe.
+          Write, Publish, & Earn in the Web3 Universe.
         </h1>
 
         <p className="text-center font-light w-full md:max-w-xl mx-auto text-white/80">
