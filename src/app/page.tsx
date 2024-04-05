@@ -30,7 +30,7 @@ export default function Home() {
               />
               <button
                 type="button"
-                className="outline-none border-none hover:bg-zinc-300 transition bg-zinc-200 rounded-lg px-6 py-3 text-sm inline-block text-black w-40 lg:w-32"
+                className="outline-none border-none hover:bg-zinc-300 transition bg-zinc-200 rounded-lg px-6 py-2 text-base inline-block text-black w-40 lg:w-32"
               >
                 Join now
               </button>
