@@ -1,8 +1,7 @@
-import { ClockIcon } from "@/icons/icons";
 import { BackButton } from "@/components/Buttons/Button";
 import { Footer } from "@/components/Footer/Footer";
 import Image from "next/image";
-import Link from "next/link";
+
 import { Interactions } from "@/components/Interations/Interactions";
 
 type Props = {
@@ -48,7 +47,7 @@ export default function Story({ params }: Props) {
         <Interactions />
 
         <section className="space-y-8 mb-10">
-          <div className="relative rounded-lg w-full h-48 overflow-auto">
+          <div className="relative rounded-lg w-full h-52 overflow-auto">
             <Image
               src="https://res.cloudinary.com/remeek/image/upload/v1688775960/flexibble/ofnj03bqihffukfmwzle.jpg"
               alt="image"

@@ -1,11 +1,21 @@
+"use client";
+
 import {
   ChatBubbleOvalLeftEllipsisIcon,
   ShareIcon,
   HandThumbUpIcon,
   BookmarkIcon,
 } from "@heroicons/react/24/outline";
+import { CommentLayout } from "../comments/CommentLayout";
+import { useState } from "react";
 
 export const Interactions = () => {
+  const [open, setOpen] = useState(true);
+
+  const handleCommentButton = () => {
+    setOpen(!open);
+  };
+
   return (
     <section className="mb-5">
       <hr className="border-white/5" />
@@ -18,7 +28,10 @@ export const Interactions = () => {
               0
             </span>
           </button>
-          <button className="flex items-center space-x-2 group transition-all">
+          <button
+            onClick={handleCommentButton}
+            className="flex items-center space-x-2 group transition-all"
+          >
             <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6 group-hover:text-white text-white/70" />
             <span className="group-hover:text-white text-white/70 font-light">
               0
@@ -34,6 +47,8 @@ export const Interactions = () => {
           </button>
         </div>
       </div>
+
+      <CommentLayout sidebarBehavoir={handleCommentButton} openSidebar={open} />
     </section>
   );
 };
