@@ -61,7 +61,7 @@ export const subMenuLinks = [
   },
   {
     name: "Stats",
-    href: "/me/stats",
+    href: "#",
     icon: StatsIcon,
   },
 ];
