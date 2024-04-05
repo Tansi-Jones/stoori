@@ -3,6 +3,7 @@ import { BackButton } from "@/components/Buttons/Button";
 import { Footer } from "@/components/Footer/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { Interactions } from "@/components/Interations/Interactions";
 
 type Props = {
   params: {
@@ -17,33 +18,34 @@ export default function Story({ params }: Props) {
         <BackButton />
       </div>
 
-      <main className="w-full max-w-3xl mx-auto mb-16">
+      <main className="w-full max-w-3xl mx-auto mb-16 relative">
         <section className="my-8 space-y-4">
           <h1 className="text-2xl font-bold leading-tight group-hover:underline">
             Why TypeScript is the Better Choice over JavaScript
           </h1>
 
-          <div className="flex items-center justify-between">
-            <div className="hidden md:flex text-sky-400 items-center justify-between gap-3">
-              <Link href={`#`} className="font-light">
-                #blockchain
-              </Link>
-              <Link href={`#`} className="font-light">
-                #programming
-              </Link>
-              <Link href={`#`} className="font-light">
-                #defi
-              </Link>
+          <section>
+            <div className="flex items-center gap-x-3">
+              <div
+                style={{
+                  background:
+                    "linear-gradient(to right, rgb(249, 176, 196), rgb(47, 16, 189))",
+                }}
+                className="outline-none w-10 h-10 rounded-full text-transparent"
+              >
+                h
+              </div>
+              <div className="text-sm">
+                <p>tsijones</p>
+                <p className="text-white/60 font-light">
+                  5 min read | 24 Feb 2024
+                </p>
+              </div>
             </div>
-            <div className="flex items-center text-white justify-between gap-8">
-              <p className="font-light">Wed 12 July 2023</p>
-              <p className="font-light flex items-center space-x-1">
-                <ClockIcon aria-hidden="true" />
-                <span>5-7 mins read</span>
-              </p>
-            </div>
-          </div>
+          </section>
         </section>
+
+        <Interactions />
 
         <section className="space-y-8 mb-10">
           <div className="relative rounded-lg w-full h-48 overflow-auto">
@@ -116,6 +118,8 @@ export default function Story({ params }: Props) {
             </p>
           </div>
         </section>
+
+        <Interactions />
       </main>
 
       <Footer />
