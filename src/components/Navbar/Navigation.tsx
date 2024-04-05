@@ -151,7 +151,7 @@ export const AuthDropdown = () => {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute z-10 mt-4 -translate-x-2/3 transform backdrop-blur-sm">
+            <Popover.Panel className="absolute z-10 mt-4 -translate-x-28 transform backdrop-blur-sm">
               <>
                 <div className="relative grid gap-5 bg-[#1D1521] border border-white/5 rounded-xl p-4">
                   <div className="flex items-center gap-x-3">
@@ -194,6 +194,13 @@ export const AuthDropdown = () => {
                         <p className="text-sm font-light text-white/80">
                           {item.name}
                         </p>
+                      </div>
+                      <div
+                        className={`${
+                          item?.name === "Stats" ? "block" : "hidden"
+                        } text-xs bg-white/5 border border-white/5 rounded font-light px-1`}
+                      >
+                        Beta
                       </div>
                     </Link>
                   ))}
