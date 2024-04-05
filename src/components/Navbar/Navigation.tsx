@@ -107,6 +107,7 @@ export const AuthButton = () => {
 
 export const AuthDropdown = () => {
   const [randomGradient, setRandomGradient] = useState<string>("");
+  const path = usePathname();
 
   useEffect(() => {
     applyRandomGradient();
@@ -204,6 +205,30 @@ export const AuthDropdown = () => {
                       </div>
                     </Link>
                   ))}
+
+                  <div className="block md:hidden">
+                    <hr className="border-white/20" />
+                    {menuLinks.map((item, index) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="-m-3 flex items-center rounded-lg py-2 pl-2 pr-5 transition duration-150 ease-in-out hover:bg-white/5 focus:outline-none"
+                      >
+                        <div className="ml-1 pr-2">
+                          <p className="text-sm font-light text-white/80">
+                            {item.name}
+                          </p>
+                        </div>
+                        <div
+                          className={`${
+                            item?.name === "Stats" ? "block" : "hidden"
+                          } text-xs bg-white/5 border border-white/5 rounded font-light px-1`}
+                        >
+                          Beta
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </>
             </Popover.Panel>
