@@ -23,7 +23,7 @@ export default function Layout({
         </Link>
 
         <div className="flex items-center gap-x-5">
-          <button className="bg-white text-black rounded-full px-3 py-[3px] text-sm">
+          <button className="bg-white text-black rounded-full px-3 py-[4px] text-sm">
             Publish
           </button>
           <AuthDropdown />
