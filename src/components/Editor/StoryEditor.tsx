@@ -11,8 +11,8 @@ import "@/styles/editor.css";
 
 export const StoryEditor = () => {
   const ref = React.useRef<EditorJS>();
-  const router = useRouter();
-  const [isSaving, setIsSaving] = React.useState<boolean>(false);
+  // const router = useRouter();
+  // const [isSaving, setIsSaving] = React.useState<boolean>(false);
   const [isMounted, setIsMounted] = React.useState<boolean>(false);
 
   const initializeEditor = React.useCallback(async () => {
