@@ -169,7 +169,7 @@ export const AuthDropdown = () => {
 
                   <Link
                     href="/me/write"
-                    className="-m-3 flex items-center rounded-lg py-2 pl-2 pr-14 transition duration-150 ease-in-out hover:bg-white/5 focus:outline-none"
+                    className="-m-3 flex items-center rounded-lg py-2 pl-2 pr-5 transition duration-150 ease-in-out hover:bg-white/5 focus:outline-none"
                   >
                     <div className="flex h-5 w-5 shrink-0 items-center justify-center text-white sm:h-6 sm:w-6">
                       <EditIcon aria-hidden="true" />
@@ -185,7 +185,7 @@ export const AuthDropdown = () => {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-m-3 flex items-center rounded-lg py-2 pl-2 pr-14 transition duration-150 ease-in-out hover:bg-white/5 focus:outline-none"
+                      className="-m-3 flex items-center rounded-lg py-2 pl-2 pr-5 transition duration-150 ease-in-out hover:bg-white/5 focus:outline-none"
                     >
                       <div className="flex h-5 w-5 shrink-0 items-center justify-center text-white sm:h-6 sm:w-6">
                         <item.icon aria-hidden="true" />
