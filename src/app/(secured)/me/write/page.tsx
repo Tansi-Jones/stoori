@@ -1,11 +1,13 @@
+"use client";
+
 import { StoryEditor } from "@/components/Editor/StoryEditor";
 
 export default function Write() {
+  const content = "";
+
   return (
     <main>
-      <section>Save</section>
-
-      <StoryEditor />
+      <StoryEditor onChange={() => {}} initialContent={content} />
     </main>
   );
 }
